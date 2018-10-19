@@ -1,0 +1,283 @@
+@import "jcmf-base"
+@import "jcmf-variable"
+
+body
+	overflow: hidden
+
+.div-header-toolbar
+	@include width-height-mxn('auto', 60px)
+	@include bgcolor-border-radius-mxn(#0099cc, 0, 0)
+	@include padding-mxn(0, 16px, 0, 16px) 
+	line-height: 5
+
+.img-logo
+	@include width-height-mxn(100px, 40px)
+
+.dialog-menu-list	
+	position: absolute
+	top: 0
+	right: 0
+	@include width-height-mxn('auto', 100%)
+	@include bgcolor-border-radius-mxn(#FFFFFF, 0, 0)
+	max-height: 100%
+	min-width: 390px
+	max-width: 400px
+
+.div-menu-list-toolbar
+	@include fs-color-mxn(20px, #FFF)
+	@include width-height-mxn(100%, 70px)
+	@include bgcolor-border-radius-mxn(#FFFFFF, 0, 0)	
+	@include padding-mxn(10px, 0, 0, 45px)
+
+.content-menu-list 
+	@include fs-color-mxn(14px, rgba(0,0,0,0.87))
+	@include width-height-mxn('auto', auto)
+	@include bgcolor-border-radius-mxn(#FFFFFF, 0, 0)	
+	min-width: 350px
+	max-width: 390px
+	max-height: 100%
+
+.btn-menu-list 
+	@include bgcolor-border-radius-mxn(#FFFFFF, 0 solid #FFFFFF, 0)
+	@include width-height-mxn('auto', 'auto')
+	@include margin-mxn(6px, 8px, 6px, 8px)
+	@include padding-mxn(0, 6px, 0, 40px)
+	font-weight: 500
+	line-height: 30px
+	max-height: 40px
+	min-height: 36px 
+	text-align: left
+	font-size: $var-menu-list-fs
+	color: $var-menu-list-color
+
+.btn-menu-sub-list
+	@include bgcolor-border-radius-mxn(#FFFFFF, 0 solid #FFFFFF, 0)
+	@include width-height-mxn('auto', 'auto')
+	@include margin-mxn(6px, 8px, 6px, 8px)
+	@include padding-mxn(0, 6px, 0, 40px)
+	font-weight: 500
+	line-height: 30px
+	max-height: 40px
+	min-height: 36px
+	text-align: left
+	font-size: $var-menu-sub-list-fs
+	color: $var-menu-sub-list-color
+
+.div-footer-toolbar
+	@include width-height-mxn('auto', 40px)
+	@include bgcolor-border-radius-mxn(#0099cc, 0, 0)
+	@include padding-mxn(0, 16px, 0, 16px)
+	line-height: 5
+
+.lbl-footer
+	font-size: $var-footer-bar-fs
+	color: $var-footer-bar-color 
+
+.a-footer
+	font-size: $var-footer-bar-fs
+	color: $var-footer-bar-color 
+
+.lbl-db-header
+	font-size: $var-db-header-fs
+	color: $var-db-header-color
+	line-height: $var-db-header-line-height
+
+.lbl-db-header-value
+	font-size: $var-db-header-value-fs
+	color: $var-db-header-value-color
+	line-height: $var-db-header-value-line-height
+
+.btn-table-action
+	font-size: $var-btn-table-action-fs
+	color: $var-btn-table-action-color
+	border: $var-btn-table-action-border
+	background-color: $var-btn-table-action-bg
+	border-radius: 10px
+	@include width-height-mxn(75px, 25px)
+	@include margin-mxn(3px, 3px, 3px, 3px)
+
+.lbl-table-content
+	font-size: $var-lbl-table-content-fs
+	color: $var-lbl-table-content-color
+	@include margin-mxn(3px, 5px, 3px, 5px)
+
+.ipt-search
+	font-size: $var-lbl-table-content-fs
+	color: $var-lbl-table-content-color
+	border-width: 0px
+	@include width-height-mxn(100%, 25px)
+
+.div-db-content-box
+	@include bgcolor-border-radius-mxn(#FFFFFF, $var-div-db-content-box-border, 0)
+	@include width-height-mxn(auto, 285px)
+
+.div-db-content-table
+	height: $var-div-db-content-tab-height
+	overflow: $var-div-db-content-tab-overflow
+
+.btn-action-mb10
+	font-size: $var-btn-action-fs 
+	color: $var-btn-action-color
+	@include bgcolor-border-radius-mxn(#0099cc, 1px solid #0099cc, 30px)
+	@include width-height-mxn(150px, 40px)
+	@include margin-mxn(0, 0, 10px, 0)
+
+.btn-action
+	font-size: $var-btn-action-fs
+	color: $var-btn-action-color
+	@include bgcolor-border-radius-mxn(#0099cc, 1px solid #0099cc, 30px)
+	@include width-height-mxn(150px, 40px)
+	
+.lbl-reports
+	font-size: $var-lbl-reports-fs
+	color: $var-lbl-reports-color
+	@include width-height-mxn(150px, 25px)
+	@include margin-mxn(15px, 0, 0, 0)
+	width: 100%
+	box-sizing: border-box
+	border-color: rgba(0, 0, 0, 0.12)
+	-webkit-box-ordinal-group: 3
+	display: block
+	background: none
+
+.dte-reports
+	font-size: $var-dte-reports-fs
+	color: $var-dte-reports-color
+	@include width-height-mxn(150px, 25px)
+
+.sel-reports
+	font-size: $var-sel-reports-fs
+	color: $var-sel-reports-color
+	@include width-height-mxn(150px, 25px)
+
+.lbl-content-header
+	font-size: $var-content-header-fs
+	color: $var-content-header-color
+
+.lbl-content-body-mb10
+	font-size: $var-content-body-fs
+	color: $var-content-body-color
+	line-height: 2
+	@include margin-mxn(0, 0, 10px, 0)
+
+.ipt-content-body-mb10
+	font-size: $var-content-body-fs
+	color: $var-content-body-color
+	border-width: 1px 1px 1px 1px
+	border-radius: 5px
+	border-style: solid
+	border-color: lightblue
+	box-sizing: border-box
+	border-color: rgba(0, 0, 0, 0.3)
+	-webkit-box-ordinal-group: 3
+	display: block
+	padding-left: 5px
+	@include width-height-mxn(100%, 30px)
+	@include margin-mxn(0, 0, 10px, 0)
+
+.lbl-content-body
+	font-size: $var-content-body-fs
+	color: $var-content-body-color
+
+.ipt-content-body
+	font-size: $var-content-body-fs
+	color: $var-content-body-color
+	border-width: 1px 1px 1px 1px
+	border-radius: 5px
+	border-style: solid
+	border-color: lightblue
+	box-sizing: border-box
+	border-color: rgba(0, 0, 0, 0.3)
+	-webkit-box-ordinal-group: 3
+	display: block
+	padding-left: 5px
+	@include width-height-mxn(100%, 30px)
+
+.btn-action-m10
+	font-size: $var-btn-action-fs
+	color: $var-btn-action-color
+	@include bgcolor-border-radius-mxn(#51b8e1, 1px solid #51b8e1, 10px)
+	@include width-height-mxn(150px, 40px)
+	@include margin-mxn(10px, 10px, 10px, 10px)
+
+.lbl-content-body-mb10-ml15
+	font-size: $var-content-body-fs
+	color: $var-content-body-color
+	line-height: 2
+	@include margin-mxn(0, 0, 10px, 15px)
+
+.ipt-disabled-content-body-mb10
+	font-size: $var-content-body-fs
+	color: $var-content-body-color
+	border-width: 1px 1px 1px 1px
+	border-radius: 5px
+	border-style: solid
+	background-color: Aliceblue
+	box-sizing: border-box
+	border-color: rgba(0, 0, 0, 0.3)
+	-webkit-box-ordinal-group: 3
+	display: block
+	padding-left: 5px
+	@include width-height-mxn(100%, 30px)
+	@include margin-mxn(0, 0, 10px, 0)
+
+.ipt-disabled-combobox-mb10
+	font-size: $var-content-body-fs
+	color: $var-content-body-color
+	border-width: 0px 0px 1px 0px
+	border-radius: 0px
+	border-style: solid
+	box-sizing: border-box
+	border-color: rgba(0, 0, 0, 0.3)
+	-webkit-box-ordinal-group: 3
+	display: block
+	background: none
+	@include width-height-mxn(100%, 30px)
+	@include margin-mxn(0, 0, 10px, 0)
+
+.ipt-disabled-property-mt10
+	font-size: $var-content-body-fs
+	color: $var-content-body-color
+	border-width: 0px 0px 0px 0px
+	border-radius: 0px
+	border-style: solid
+	box-sizing: border-box 
+	border-color: rgba(0, 0, 0, 0.3)
+	-webkit-box-ordinal-group: 3
+	display: block
+	background: none
+	@include width-height-mxn(100%, 30px)
+	@include margin-mxn(10px, 0, 0px, 0)
+
+.lbl-cust-menu
+	font-size: $var-lbl-cust-menu-fs
+	color: $var-lbl-cust-menu-color
+
+.btn-vertical-menu
+	font-size: $var-btn-pref-menu-fs
+	color: $var-btn-pref-menu-color
+	@include bgcolor-border-radius-mxn(#d3eef8, none, 0px)
+	@include width-height-mxn(100%, 50px)
+	@include padding-mxn(0px, 0px, 0px, 15px)
+	font-weight: 600	
+	text-align: left 
+	
+.btn-vertical-menu.clicked
+
+	@include bgcolor-border-radius-mxn(#bfeef8, none, 0px) 
+	
+.btn-vertical-sub-menu
+	font-size: $var-btn-pref-menu-fs
+	color: $var-btn-pref-menu-color
+	@include bgcolor-border-radius-mxn(#e1eef8, none, 0px)
+	@include width-height-mxn(100%, 50px)
+	@include padding-mxn(0px, 0px, 0px, 15px)
+	font-weight: 600	
+	text-align: left 
+	
+.btn-vertical-sub-menu.clicked 
+
+	@include bgcolor-border-radius-mxn(#d3eef8, none, 0px)
+
+	
+ 

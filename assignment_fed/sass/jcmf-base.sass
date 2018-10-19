@@ -1,0 +1,61 @@
+$par-fs: 14px
+$par-color: #000
+
+$par-width: 0px
+$par-height: 0px
+
+$par-mtop: 0
+$par-mright: 0
+$par-mbottom: 0
+$par-mleft: 0
+
+$par-ptop: 0
+$par-pright: 0
+$par-pbottom: 0
+$par-pleft: 0
+
+$par-bg-color: rgba(0, 0, 0, 0.1)
+$par-border: 1px solid rgba(255, 255, 255, 0.5) 
+$par-border-radius: 30px 
+	
+$par-border-tr-radius: 0px
+$par-border-tl-radius: 0px
+$par-border-br-radius: 0px
+$par-border-bl-radius: 0px
+
+$par-hr-border: 1px solid #000
+
+@mixin fs-color-mxn($par-fs, $par-color)
+	font-size: $par-fs
+	color: $par-color
+	
+@mixin width-height-mxn($par-width, $par-height)
+	width: $par-width
+	height: $par-height
+	
+@mixin bgcolor-border-radius-mxn($par-bg-color, $par-border, $par-border-radius)
+	background: $par-bg-color
+	border: $par-border
+	border-radius: $par-border-radius
+	
+@mixin margin-mxn($par-mtop, $par-mright, $par-mbottom, $par-mleft)
+	margin-top: $par-mtop
+	margin-right: $par-mright
+	margin-bottom: $par-mbottom
+	margin-left: $par-mleft
+
+@mixin padding-mxn($par-ptop, $par-pright, $par-pbottom, $par-pleft)
+	padding-top: $par-ptop
+	padding-right: $par-pright
+	padding-bottom: $par-pbottom
+	padding-left: $par-pleft
+	
+@mixin border-top-bottom-radius-mxn($par-border-tr-radius, $par-border-tl-radius, $par-border-br-radius, $par-border-bl-radius)
+	border-top-right-radius: $par-border-tr-radius
+	border-top-left-radius: $par-border-tl-radius
+	border-bottom-right-radius: $par-border-br-radius
+	border-bottom-left-radius: $par-border-bl-radius
+	
+@mixin hr-border-mxn($par-hr-border)
+	border-top: $par-hr-border
+	

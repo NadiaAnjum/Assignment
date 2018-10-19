@@ -1,0 +1,40 @@
+<!-- header -->    
+<div flex="none" layout="column" ng-controller="MainPageCtlr"> 
+	<div flex="none" layout="column">
+		<div flex="none" class="div-header-toolbar" layout="row" layout-align="space-between center" style="line-height: 1.5;">
+			<div layout="30"></div>
+			<div layout="40">
+				<label class="lbl-logo">
+					<i>
+						PRODUCTS
+					</i>
+				</label>
+			</div>
+			<div layout="30"></div>
+		</div> 
+	</div>
+
+<!-- content -->  
+
+	<div flex="none" layout="row" style="height: 85vh; overflow: auto; overflow-x: hidden;">
+		<div flex="10"></div>
+		<div flex="80" layout="column">
+			<md-whiteframe class="md-whiteframe-2dp" layout-margin>
+				<div flex="none" layout="row" ng-repeat="p in productList" style="margin-bottom: 10px;">
+					<div flex="100" layout="column" layout-align=" center start" >
+						<div flex="none" layout="row" layout-align="center center"  style="margin-top: 10px; margin-bottom: 10px;"> 
+							<img ng-src="{{p.image_url}}" width="150" height="150">
+						</div>
+						<a style=" font-size: 14px; color: #000; width: 100%; border: none; font-weight: bold; margin: 5px;">   
+							{{p.name}}
+						</a>
+						<label style=" font-size: 14px; color: #000; width: 100%; border: none; font-weight: bold; margin: 5px;">   
+							{{p.tagline}}
+						</label>
+					</div>
+				</div> 
+			</md-whiteframe>
+		</div>
+		<div flex="10"></div>
+	</div>
+</div>

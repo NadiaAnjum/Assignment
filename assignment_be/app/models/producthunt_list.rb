@@ -1,0 +1,2 @@
+class ProducthuntList < ApplicationRecord
+end

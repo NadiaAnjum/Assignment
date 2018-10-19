@@ -1,0 +1,2 @@
+sass --watch D:\rails_project\sample_app\templates\JCFMM12V01R01\sass\jcmf-transaction.sass:D:\rails_project\sample_app\templates\JCFMM12V01R01\sass\jcmf-transaction.css
+
